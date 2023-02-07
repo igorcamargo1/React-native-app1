@@ -1,20 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { View, TextInput } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+function Principal(){
+  
+  
+
+  return(
+    <View style={{height: "100%", alignItems: "center", justifyContent: "center"}}>
+      <TextInput style={{borderColor:"#000000", borderWidth:1, width: "30%", marginTop:"10px", padding:"10px"}} placeholder="Nome do pet" />
+      <TextInput style={{borderColor:"#000000", borderWidth:1, width: "30%", marginTop:"10px", padding:"10px"}} placeholder="Raça" />
+      <TextInput style={{borderColor:"#000000", borderWidth:1, width: "30%", marginTop:"10px", padding:"10px"}} placeholder="Peso" />
+      <TextInput style={{borderColor:"#000000", borderWidth:1, width: "30%", marginTop:"10px", padding:"10px"}} placeholder="Nascimento" />
+      <TextInput style={{borderColor:"#000000", borderWidth:1, width: "30%", marginTop:"10px", padding:"10px"}} placeholder="Nome do dono" />
     </View>
-  );
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default Principal;
